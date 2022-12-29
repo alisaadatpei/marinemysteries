@@ -24,7 +24,7 @@ const Layout = ({ isHomePage, children }) => {
       <header className="global-header">
         <h1 className="main-heading">
             <Link to="/">
-              <img src={Logo} alt="Logo" className="fluid-img" style={{width: 110}} />
+              <img src={Logo} alt="Logo" className="fluid-img" style={{width: 180}} />
             </Link>
         </h1>
       </header>
@@ -32,7 +32,9 @@ const Layout = ({ isHomePage, children }) => {
       <main>{children}</main>
 
       <footer>
+        <small>
         © {new Date().getFullYear()}, Marine Mysteries. All Contents Of This Site Belong To Marine Mysteries.
+        </small>
       </footer>
     </div>
   )
